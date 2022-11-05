@@ -68,21 +68,7 @@ function betterBubbleSort(arr) {
   return newArr
 }
 
-const arr = [5, 1, 3, 2, 4]
-
-// timeEnd 函数在 nodejs 中不生效
-function timeEnd(title, callback) {
-  console.time(title)
-  callback()
-  console.timeEnd(title)
+export {
+  bubbleSort,
+  betterBubbleSort,
 }
-
-timeEnd("bubbleSort", () => {
-  let res1 = bubbleSort(arr)
-  console.log(res1)
-})
-
-timeEnd("betterBubbleSort", () => {
-  let res2 = betterBubbleSort(arr)
-  console.log(res2)
-})
